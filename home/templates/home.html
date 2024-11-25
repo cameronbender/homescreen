@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inbox Watchdog</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>Inbox Watchdog</h1>
+    </header>
+
+    <!-- Alerts Section -->
+    <div class="alerts-section">
+        <ul>
+            <li>
+                <span>Alert #1 (Malicious File)</span>
+                <button class="status critical">Critical</button>
+            </li>
+            <li>
+                <span>Alert #2 (Keyword Detection)</span>
+                <button class="status low">Low</button>
+            </li>
+            <li>
+                <span>Alert #3 (Malicious File)</span>
+                <button class="status critical">Critical</button>
+            </li>
+            <li>
+                <span>Alert #4 (Malicious URL)</span>
+                <button class="status moderate">Moderate</button>
+            </li>
+            <li>
+                <span>Alert #5 (Keyword Detection)</span>
+                <button class="status low">Low</button>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Tools Section -->
+    <div class="tools">
+        <!-- Encryption Section -->
+        <div class="tool encryption">
+            <h3>Encryption</h3>
+            <div class="input-group">
+                <input id="encrypt-input" type="text" placeholder="encrypt a message..." />
+                <button id="encrypt-btn" class="small-btn">✔</button>
+            </div>
+            <div class="output-box">
+                <h4>Encrypted Output:</h4>
+                <p id="encrypt-output">Your encrypted message will appear here...</p>
+            </div>
+            <div class="input-group">
+                <input id="decrypt-input" type="text" placeholder="decrypt a message..." />
+                <button id="decrypt-btn" class="small-btn">✔</button>
+            </div>
+            <div class="output-box">
+                <h4>Decrypted Output:</h4>
+                <p id="decrypt-output">Your decrypted message will appear here...</p>
+            </div>
+        </div>
+
+        <!-- Word Bank Section -->
+        <div class="tool word-bank">
+            <h3>Word Bank</h3>
+            <div class="input-group">
+                <input id="keyword-input" type="text" placeholder="add a keyword to the word bank..." />
+                <button id="add-keyword-btn" class="small-btn">✔</button>
+            </div>
+            <div class="input-group">
+                <input id="delete-keyword-input" type="text" placeholder="delete a keyword from the word bank..." />
+                <button id="delete-keyword-btn" class="small-btn">✔</button>
+            </div>
+            <button id="view-word-bank" class="large-btn">View Word Bank</button>
+        </div>
+    </div>
+</div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
